@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { LoginService } from '../services/account/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +16,20 @@ export class LoginComponent {
     userName: '',
     password: ''
   };
-  onSubmit(){
+  errorMessage: boolean =false;
+  constructor(private loginService: LoginService,private router: Router) {}
 
+
+  onSubmit(form : any){
+    this.loginService.postData(this.userData).subscribe({
+      next:((response:any)=>{
+        this.router.navigateByUrl('/home');
+      }),
+      error:((err:any)=>{
+        if (err.status === 401){
+          this.errorMessage = true;
+        }
+      })
+    })
   }
 }
