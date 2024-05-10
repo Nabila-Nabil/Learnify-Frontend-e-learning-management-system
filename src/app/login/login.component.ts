@@ -16,15 +16,19 @@ export class LoginComponent {
     userName: '',
     password: ''
   };
+  errorMessage: boolean =false;
   constructor(private loginService: LoginService,private router: Router) {}
 
-  onSubmit(){
+
+  onSubmit(form : any){
     this.loginService.postData(this.userData).subscribe({
       next:((response:any)=>{
         this.router.navigateByUrl('/home');
       }),
       error:((err:any)=>{
- console.log(err)
+        if (err.status === 401){
+          this.errorMessage = true;
+        }
       })
     })
   }
