@@ -23,6 +23,7 @@ export class LoginComponent {
   onSubmit(form : any){
     this.loginService.postData(this.userData).subscribe({
       next:((response:any)=>{
+        localStorage.setItem('token', response.token);
         this.router.navigateByUrl('/home');
       }),
       error:((err:any)=>{
