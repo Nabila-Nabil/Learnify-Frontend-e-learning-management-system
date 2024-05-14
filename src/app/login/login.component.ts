@@ -24,7 +24,7 @@ export class LoginComponent {
     this.loginService.postData(this.userData).subscribe({
       next:((response:any)=>{
         localStorage.setItem('token', response.token);
-        this.router.navigateByUrl('/home');
+        this.router.navigateByUrl('/courses');
       }),
       error:((err:any)=>{
         if (err.status === 401){

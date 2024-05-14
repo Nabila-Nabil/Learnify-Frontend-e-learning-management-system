@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class CoursesService {
-  private apiUrl = 'http://localhost:5104/api/Course';
+  private apiUrl = 'http://localhost:60086/api/Course';
   constructor(private http:HttpClient) { }
   getAllCourses(): Observable<any[]> {
     return this.http.get<any[]>(this.apiUrl);
