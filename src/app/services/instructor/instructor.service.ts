@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class InstructorService {
 
-  private apiUrl = 'http://localhost:60086/api/Instructor/';
+  private apiUrl = 'http://localhost:5104/api/Instructor/';
   constructor(private http:HttpClient) { }
   getInstructorById(instructorId: any): Observable<any> {
     const url = `${this.apiUrl}${instructorId}`;
