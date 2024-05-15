@@ -1,9 +1,12 @@
-.navbar-dark .nav-item .nav-link {
-    color: #fff;
+.navbar-light .nav-item .nav-link,.btn-light {
+    color: #7622dd;
    
   }
-  
-  .navbar-dark .nav-item .nav-link:hover {
+  a.text-white
+  {
+    color: #7622dd;
+  }
+  .navbar-light .nav-item .nav-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
     transition: all 0.3s ease;
     border-radius: 0.25rem;
@@ -14,8 +17,8 @@
     position: relative;
     left: 0;
   }
-  .navbar-dark {
-    background-color: #211951 !important;
+  .navbar-light {
+    background-color: #F0F3FF!important;
   }
   
 /* textarea:hover, 
