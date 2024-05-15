@@ -1,24 +1,13 @@
 <div class="container">
-    <div class="main-content">
-      <p>course-enrollment works!</p>
-      <iframe
-        width="990"
-        height="557"
-        src="https://www.youtube.com/embed/hTt-Je4PKmI"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
+  <div class="main-content">
+  </div>
     <div class="sidebar">
       <h3>Course Content</h3>
       <ul>
          <li *ngFor="let content of courseContent">
-          {{ content.type }} (ID: {{ content.id }})
+          <a [routerLink]="['/course-enrollement', content.videoPathURL]" routerLinkActive="active">{{ content.content }}</a>
         </li>
       
-    
       </ul>
     </div>
   </div>
