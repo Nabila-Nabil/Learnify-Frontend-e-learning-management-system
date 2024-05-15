@@ -6,10 +6,13 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ContentService {
-  private apiUrl ='http://localhost:60086/api/Content/course/';
-  constructor(private http:HttpClient) { }
+  private apiUrl = 'http://localhost:5104/api/Content/course/';
+
+  constructor(private http: HttpClient) {}
+
   getContentByCourseId(courseId: any): Observable<any> {
     const url = `${this.apiUrl}${courseId}`;
     return this.http.get(url);
   }
 }
+
