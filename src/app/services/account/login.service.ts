@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LoginService {
-  private apiUrl = 'http://localhost:60086/api/Account/Login';
+  private apiUrl = 'http://localhost:5104/api/Account/Login';
   constructor(private http:HttpClient) { }
   postData(data:any):Observable<any>{
     return this.http.post(this.apiUrl,data)

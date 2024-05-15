@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class CourseDetailsService {
 
-  private apiUrl = 'http://localhost:60086/api/Course/ByCourseId/';
+  private apiUrl = 'http://localhost:5104/api/Course/ByCourseId/';
   constructor(private http:HttpClient) { }
   getCourseName(courseId: any): Observable<any> {
     const url = `${this.apiUrl}${courseId}`;
