@@ -1,5 +1,6 @@
 .navbar-dark .nav-item .nav-link {
     color: #fff;
+   
   }
   
   .navbar-dark .nav-item .nav-link:hover {
@@ -13,3 +14,25 @@
     position: relative;
     left: 0;
   }
+  .navbar-dark {
+    background-color: #211951 !important;
+  }
+  
+/* textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+} */
+.noFocus:focus{
+
+  outline: none !important;
+  box-shadow: none !important;
+}
