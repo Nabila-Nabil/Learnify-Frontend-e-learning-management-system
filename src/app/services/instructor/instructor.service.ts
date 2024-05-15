@@ -3,16 +3,15 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
-
 @Injectable({
   providedIn: 'root'
 })
-export class CourseDetailsService {
+export class InstructorService {
 
-  private apiUrl = 'http://localhost:60086/api/Course/ByCourseId/';
+  private apiUrl = 'http://localhost:60086/api/Instructor/';
   constructor(private http:HttpClient) { }
-  getCourseName(courseId: any): Observable<any> {
-    const url = `${this.apiUrl}${courseId}`;
+  getInstructorById(instructorId: any): Observable<any> {
+    const url = `${this.apiUrl}${instructorId}`;
     return this.http.get(url);
   }
 }
