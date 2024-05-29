@@ -1,4 +1,51 @@
-# ELearningManagementSystem
+
+# Learnify 
+
+### 📚 Project :  E-Learning Management System (Frontend)
+
+### 📂 Repository Link: [Learnify Frontend](https://github.com/Nabila-Nabil/Learnify-Frontend-E-Learning-Management-System)
+
+### 📜 Project Description:
+A dynamic and responsive frontend for an e-learning platform, built with Angular, providing a seamless user experience for students and instructors.
+
+### 🛠 Technologies Used:
+- **Front-End**: Angular, TypeScript, HTML5, CSS3,Bootstrap5
+- **Tools**: Git, GitHub
+
+### 🌟 Features:
+- Interactive course dashboards
+- Real-time notifications and updates
+- User-friendly course navigation
+- Integration with backend APIs
+
+### 🚀 Setup Instructions:
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/Nabila-Nabil/Learnify-E-Learning-Management-System-using-api
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd Learnify-E-Learning-Management-System-using-api
+    ```
+
+3. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+4. **Run the application:**
+
+    ```bash
+    ng serve
+    ```
+
+
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
