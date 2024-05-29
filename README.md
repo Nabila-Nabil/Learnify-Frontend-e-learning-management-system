@@ -3,7 +3,7 @@
 
 ### 📚 Project :  E-Learning Management System (Frontend)
 
-### 📂 Repository Link: [Learnify Frontend](https://github.com/Nabila-Nabil/Learnify-Frontend-E-Learning-Management-System)
+### 📂 Repository Link: [Learnify Frontend](https://github.com/Nabila-Nabil/Learnify-Frontend-e-learning-management-system)
 
 ### 📜 Project Description:
 A dynamic and responsive frontend for an e-learning platform, built with Angular, providing a seamless user experience for students and instructors.
