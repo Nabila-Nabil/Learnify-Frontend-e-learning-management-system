@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ContentService } from '../../services/content/content.service';
 import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-course-contents',
   standalone: true,
-  imports: [CommonModule], 
+  imports: [CommonModule,RouterLink,RouterLinkActive], 
   templateUrl: './course-contents.component.html',
   styleUrls: ['./course-contents.component.css']
 })
@@ -32,7 +33,7 @@ export class CourseContentsComponent implements OnInit {
     this.contentService.getContentByCourseId(id).subscribe(
       (response: any) => {
         this.courseContent = response;
-        console.log('Course content:', response); // Log course content
+        console.log('Course contenttttttttttt:', response); // Log course content
       },
       (error: any) => {
         console.error('Error fetching course details:', error);
